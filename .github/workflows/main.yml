@@ -24,7 +24,7 @@ jobs:
         run: docker build -t phani/node:latest .
 
       - name: Push Docker image
-        run: docker push 7842844601/node:latest .
+        run: docker push 7842844601/node:latest
 
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
