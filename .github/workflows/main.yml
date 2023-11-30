@@ -21,7 +21,7 @@ jobs:
          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t phani/node:latest .
+        run: docker build -t 7842844601/node:latest .
 
       - name: Push Docker image
         run: docker push 7842844601/node:latest
